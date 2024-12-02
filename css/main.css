@@ -1,0 +1,44 @@
+.bag-container{
+	height: 95vh;
+	margin-inline: 15%;
+	display: grid;
+	column-gap: 2.5%;
+	grid-template-columns:15% 35% 50%;
+	justify-content: center;
+	align-items: center;
+}
+.icon-image-container{
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: lightcoral;
+}
+.title-image-container{
+	height: 90%;
+	display: flex;
+	align-items: center;
+	background-color: lightcoral;
+}
+.description-container{
+	height: 90%;
+	background-color: rgb(213, 250, 210);
+}
+
+.icon-image-container .image-box{
+	height: 20vh;
+	width: 66%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px blue solid;
+	padding: 1vh;
+	margin-top: 2.5%;
+	border-radius: 1vh;
+}
+.icon-image-container .image-box .icon-img{
+	width: 100%;
+}
+.title-image-box{
+	width: 100%;
+}
