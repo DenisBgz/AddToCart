@@ -1,44 +1,125 @@
+*{
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+/* Контейнеры */
 .bag-container{
 	height: 95vh;
 	margin-inline: 15%;
 	display: grid;
 	column-gap: 2.5%;
-	grid-template-columns:15% 35% 50%;
+	grid-template-columns:20% 40% 40%;
 	justify-content: center;
 	align-items: center;
 }
 .icon-image-container{
-	height: 90%;
+	height: 65%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	background-color: lightcoral;
+	align-items: end;
+
 }
 .title-image-container{
-	height: 90%;
+	height: 70%;
 	display: flex;
-	align-items: center;
-	background-color: lightcoral;
+	align-items: start;
 }
 .description-container{
-	height: 90%;
-	background-color: rgb(213, 250, 210);
+	height: 65%;
+	display: flex;
+	flex-direction:column;
 }
+.description-container .coast-container{
+	display: flex;
+	align-items: center;
+	margin-top: 5vh;
+	font-size: 32px;
+	font-weight: 700;
+	gap:2.5vh;
+}
+.description-container .choice-option-container{
+	display: flex;
+}
+/*Боксы*/
 
 .icon-image-container .image-box{
-	height: 20vh;
-	width: 66%;
+	height: 10%;
+	width: 20%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 2px blue solid;
 	padding: 1vh;
 	margin-top: 2.5%;
 	border-radius: 1vh;
+	
 }
 .icon-image-container .image-box .icon-img{
 	width: 100%;
+	object-fit: cover;
 }
 .title-image-box{
 	width: 100%;
+}
+.choice-option-container{
+	width: 50%;
+	margin-top: 2.5vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	font-size: 18px;
+	margin-bottom: 5vh;
+}
+/* Button */
+
+#AddToCart{
+	background-color: rgb(67, 201, 172);
+	border:none;
+	font-size: 16px;
+	font-weight: 600;
+	white-space:nowrap;
+	color:white;
+	padding: 2.5vh;
+	border-radius: 2.5vh;
+	margin-top: auto;
+	margin-bottom: 2.5vh;
+}
+/*  */
+h4{
+	margin-bottom: 1.25vh;
+	font-size: 24px;
+}
+h1{
+	margin-bottom: 1.25vh;
+	font-size: 56px;
+}
+.description-p{
+	color:rgb(134, 133, 133);
+	font-size: 20px;
+
+}
+.discount-box{
+	font-size: 20px;
+	background-color: rgb(184, 255, 237);
+	color: rgb(67, 201, 172);
+	padding: 1vh;
+	border-radius: 1.25vh;
+}
+.real-coast-p{
+	font-size: 22px;
+	font-weight: 600;
+	color:rgb(134, 133, 133);
+	margin-bottom: 2.5vh;
+}
+.choice-option-name{
+	font-size: 22px;
+	font-weight: 600;
+}
+.option{
+	padding:1.25vh;
+}
+.option:hover{
+	border: 0.25vh rgb(67, 201, 172,25%) solid;
+	padding: 1vh;
+	border-radius:1.25vh;
+	cursor:pointer;
 }
