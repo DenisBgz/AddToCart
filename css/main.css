@@ -136,6 +136,8 @@ h1{
 }
 .option{
 	padding:1.25vh;
+	border-radius:1.25vh;
+	padding: 1vh;
 }
 .option:hover{
 	border: 0.25vh rgb(67, 201, 172,25%) solid;
