@@ -29,18 +29,26 @@ addToBagButton.onclick = ()=>{
 		addToBagButton.style.width = "55%";
 		addToBagButton.textContent = "Добавлено в корзину";
 		addToBagButton.style.backgroundColor = "rgb(184, 255, 237)";
-		addToBagButton.style.color = "rgb(67, 201, 172)"
-		addElement('-','button','minus-button')
-		addElement('1','p','quantity')
-		addElement('+','button','plus-button')
+		addToBagButton.style.color = "rgb(67, 201, 172)";
+		addElement('-','button','minus-button');
+		addElement('1','p','quantity');
+		addElement('+','button','plus-button');
+		document.getElementById('buttonContainer').addEventListener('click', function(event) {
+            if (event.target.classList.contains('plus-button')) {
+                document.getElementById('buttonContainer').addEventListener('click',function(event){
+					let quantityElement = document.querySelector('.quantity'); 
+					quantityElement.textContent = "fuck!"
+				})
+            }
+        });
 		added = true;
 	}else{
 		removeElement('plus-button');
 		removeElement('minus-button');
 		removeElement('quantity');
-		addToBagButton.style.width = "100%"
-		addToBagButton.style.color = "white"
-		addToBagButton.style.backgroundColor = "rgb(67, 201, 172)"
+		addToBagButton.style.width = "100%";
+		addToBagButton.style.color = "white";
+		addToBagButton.style.backgroundColor = "rgb(67, 201, 172)";
 		addToBagButton.textContent = "Добавить в корзину";
 		added = false;
 	}
